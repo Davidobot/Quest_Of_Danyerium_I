@@ -29,7 +29,7 @@ function gameLoad()
 	block = {}
 	block[1] = _navi:new('This |c{mblue}noise|c{white} in your head was created when you fell into this god-damn bush and hurt your head.|! I will not be taking you to the doctor after this.',{face = face_1, face_border = true, name = "Your Fairy", wbox = 256, hbox = 128})
 	
-	playVoice = 0
+	playVoice = 1
 	
 	setCallBacksWorld(WorldMap, player)
 	setCallBacksHouse1(House1, player)
