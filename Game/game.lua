@@ -26,12 +26,8 @@ function gameLoad()
 	width = love.graphics.getWidth()
     height = love.graphics.getHeight()
 	
-	msg = {}
-	msg[1] = _navi:new('This is a TEST! Press |c{mgreen}'..arc.btn.ent..'|c{white} to continue.|! Hi Again!',{face = face_1, face_border = true, name = "Navi", wbox = 256, hbox = 128})
-	msg[2] = _navi:new('You being a |c{mblue}Navi|c{white} is really hard work! HAHAHAHAHAHHAHAHAHAHAHAHAHAHAHAHA!',{face = face_1, face_border = true, name = "Navi", wbox = 256, hbox = 128})
-
 	block = {}
-	block[1] = _navi:new('This |c{mblue}noise|c{white} in your head was created when you fell into this god-damn bush and hurt your head.|! I will not be taking you to the doctor after this.',{face = face_1, face_border = true, name = "Navi", wbox = 256, hbox = 128})
+	block[1] = _navi:new('This |c{mblue}noise|c{white} in your head was created when you fell into this god-damn bush and hurt your head.|! I will not be taking you to the doctor after this.',{face = face_1, face_border = true, name = "Your Fairy", wbox = 256, hbox = 128})
 	
 	playVoice = 0
 	
@@ -223,7 +219,7 @@ function gameUpdate(dt)
 	
 	if CurMap == WorldMap then
 		for i,v in ipairs(NPC) do
-			if v then
+			if v and (v.x < player.x + 400 or v.x > player.x - 400) and (v.y > player.y - 300 or v.y < player.y + 300) then
 				v.moveTimer = v.moveTimer + 1
 				if v.health < 0 or v.health == 0 then
 					keyZ = 1
@@ -366,8 +362,9 @@ function gameDraw()
 		love.graphics.setColor( 0, 255, 0 )
 		love.graphics.rectangle( "line", 8, (10 + 32)*(item_highlighted-1) + 8, 32, 32 )
 	end
-	_navi.play_list(msg,0,0)
 	
+	
+	--Chat
 	if playVoice > 0 then
 		if playVoice == 1 then
 			block[1]:play(0,0)
