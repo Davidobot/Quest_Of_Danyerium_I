@@ -1,0 +1,32 @@
+Title: Quests of Danyerium I - The Precious Gemstone
+
+This is the new game.
+
+It is the story of an astronomer who lives in a village powered by a precious gem. The gem also provides a force field against the evil of the surrounding world.
+
+One day the astronomer woke up to the sound of screaming after the gem has disappeared. He must find the gem to save the people in his village or let them die.
+
+Easter Eggs everywhere!
+
+In this Zelda-like game the astronomer must be a hero, the hero of his village.
+
+The astronomer will be called:
+Boy	  - Sirius
+Girl  - Andromeda
+
+The whole town had a vote on who would go to save the gem. Everyone voted for the astronomer as he/she has the only understanding of the outside world.
+
+Not a platformer.
+
+
+Stages:
+Pre-Alpha = Game Engine, Graphics.  Before 1/2/13
+Alpha     = Graphics, Refining the Dialog.  Before 1/3/13
+Beta      = Sound, Graphics, Finishing Touches. Before 31/3/13
+Gold      = Final Release   Before 1/4/13
+
+Things to Do:
+@ Movement - Done
+@ Collisions - Done
+@ GUI - Basics Done
+@ Battles - Not Done
