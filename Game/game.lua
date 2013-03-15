@@ -27,7 +27,7 @@ function gameLoad()
     height = love.graphics.getHeight()
 	
 	block = {}
-	block[1] = _navi:new('This |c{mblue}noise|c{white} in your head was created when you fell into this god-damn bush and hurt your head.|! I will not be taking you to the doctor after this.',{face = face_1, face_border = true, name = "Your Fairy", wbox = 256, hbox = 128})
+	block[1] = _navi:new('Hi, this is your |c{mblue}Guardian|c{white}, follow that path! |c{mblue}Z|c{white} is your action (Attacking, Skipping Messages) key!|! Follow the path, I will tell you the rest when the time comes.',{face = face_1, face_border = true, name = "Your Fairy", wbox = 256, hbox = 128})
 	
 	playVoice = 1
 	
